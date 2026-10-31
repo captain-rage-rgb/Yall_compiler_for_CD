@@ -1,0 +1,4 @@
+func start() {
+    let z = 0;
+    out(10 / z);
+}

@@ -1,0 +1,5 @@
+func start() {
+    let s1 = in("prompt: ");
+    let s2 = in();
+    out(s1, s2);
+}

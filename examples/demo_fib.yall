@@ -1,0 +1,36 @@
+func num fibRec(num n) {
+    if (n <= 0) {
+        end 0;
+    }
+    if (n == 1) {
+        end 1;
+    }
+    end fibRec(n - 1) + fibRec(n - 2);
+}
+
+func num fibLoop(num n) {
+    if (n <= 0) {
+        end 0;
+    }
+    if (n == 1) {
+        end 1;
+    }
+    let a = 0;
+    let b = 1;
+    let curr = 0;
+    rep (let i = 2; i <= n; ++i) {
+        curr = a + b;
+        a = b;
+        b = curr;
+    }
+    end b;
+}
+
+func start() {
+    out("Comparing recursive and iterative Fibonacci:");
+    rep (let i = 0; i <= 10; ++i) {
+        let r = fibRec(i);
+        let l = fibLoop(i);
+        out("n =", i, "rec:", r, "loop:", l, "equal:", r == l);
+    }
+}

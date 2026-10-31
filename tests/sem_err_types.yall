@@ -1,0 +1,16 @@
+func start() {
+    num a = "str";
+    num b = 3.14;
+    let c = yes + 5;
+    let d = 5.5 % 2.0;
+
+    if (42) {
+        out("bad condition");
+    }
+
+    let flag cmp = ("hello" == 10);
+    let e = !10;
+    let f = "hello" + "world";
+
+    out(a, b, c, d, cmp, e, f);
+}

@@ -1,0 +1,25 @@
+func start() {
+    fixed num a = 15;
+    fixed num b = 4;
+    fixed decimal x = 12.5;
+    fixed decimal y = 2.5;
+
+    out("=== Integer Calculations ===");
+    out("a =", a, "b =", b);
+    out("a + b =", a + b);
+    out("a - b =", a - b);
+    out("a * b =", a * b);
+    out("a / b =", a / b);
+    out("a % b =", a % b);
+
+    out("=== Decimal Calculations ===");
+    out("x =", x, "y =", y);
+    out("x + y =", x + y);
+    out("x - y =", x - y);
+    out("x * y =", x * y);
+    out("x / y =", x / y);
+
+    out("=== Mixed Arithmetic (Widening) ===");
+    out("a + x =", a + x);
+    out("x - b =", x - b);
+}

@@ -1,0 +1,15 @@
+func num square(num n) {
+    end n * n;
+}
+
+func nothing logMsg(text msg) {
+    out(msg);
+    end;
+}
+
+func start() {
+    let x = square(5);
+    logMsg("done");
+    out("a", x, 3.5, yes);
+    out();
+}

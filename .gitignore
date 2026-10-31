@@ -1,0 +1,14 @@
+# Binaries
+yall
+yall.exe
+*.exe
+*.o
+*.obj
+
+# Editor & OS files
+.vscode/
+.idea/
+*.swp
+*~
+.DS_Store
+Thumbs.db

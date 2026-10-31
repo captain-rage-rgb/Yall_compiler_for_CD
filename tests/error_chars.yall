@@ -1,0 +1,5 @@
+// error_chars.yall - Testing invalid characters and lone bitwise operators
+let num a = 10 @ 20;
+let num b = #50;
+let flag c = yes & no;
+let flag d = yes | no;

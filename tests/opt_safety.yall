@@ -1,0 +1,23 @@
+func flag logic(flag a, flag b, flag c) {
+    end a && b || c;
+}
+
+func start() {
+    // Safety check 1: div by zero must NOT be folded
+    let z = 0;
+    out(10 / z);
+
+    // Safety check 2: loop variable modified across label must NOT propagate stale value
+    let sum = 0;
+    rep (let i = 0; i < 3; ++i) {
+        sum += i;
+    }
+    out(sum);
+
+    // Safety check 3: doubly assigned temp in logic
+    let res = logic(yes, no, yes);
+    out(res);
+
+    // Safety check 4: argument order in out
+    out(1, 2, 3);
+}

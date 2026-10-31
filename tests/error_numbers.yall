@@ -1,0 +1,4 @@
+// error_numbers.yall - Demonstrates malformed decimal literals
+
+let decimal invalid1 = 5.;
+let decimal invalid2 = .5;

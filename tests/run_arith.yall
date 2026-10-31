@@ -1,0 +1,7 @@
+func start() {
+    let a = 10 + 20 * 3 - 40 / 2;
+    let b = 17 % 5;
+    let c = -(a + b);
+    let d = 5 + 2.5 * 2.0;
+    out(a, b, c, d);
+}

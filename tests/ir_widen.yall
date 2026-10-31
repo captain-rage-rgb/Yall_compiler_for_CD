@@ -1,0 +1,15 @@
+func nothing takeDec(decimal d) {
+    out(d);
+}
+
+func decimal giveDec() {
+    end 42;
+}
+
+func start() {
+    let a = 5 + 2.5;
+    decimal x = 5;
+    takeDec(10);
+    decimal r = giveDec();
+    out(a, x, r);
+}

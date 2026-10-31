@@ -1,0 +1,8 @@
+func flag check(flag a, flag b, flag c) {
+    end a && b || c;
+}
+
+func start() {
+    let r = check(yes, no, yes);
+    out(r);
+}

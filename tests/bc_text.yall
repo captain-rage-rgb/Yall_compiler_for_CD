@@ -1,0 +1,8 @@
+func start() {
+    let s = "hello";
+    let ch = 'A';
+    let f = yes;
+    let eq = s == "hello";
+    let ne = s != "world";
+    out(s, ch, f, eq, ne);
+}

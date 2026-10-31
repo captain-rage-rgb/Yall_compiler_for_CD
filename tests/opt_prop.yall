@@ -1,0 +1,6 @@
+func start() {
+    let a = 5;
+    let b = a + 1;
+    let c = b * 2;
+    out(c);
+}

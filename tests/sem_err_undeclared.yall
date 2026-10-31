@@ -1,0 +1,10 @@
+func start() {
+    let a = unknownVar + 1;
+
+    rep (let i = 0; i < 3; ++i) {
+        out(i);
+    }
+    out(i);
+
+    missingFunc();
+}

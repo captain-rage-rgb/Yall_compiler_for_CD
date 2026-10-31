@@ -1,0 +1,7 @@
+func nothing recurse() {
+    recurse();
+}
+
+func start() {
+    recurse();
+}

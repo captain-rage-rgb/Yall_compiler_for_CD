@@ -1,0 +1,21 @@
+func num square(num n) {
+    end n * n;
+}
+
+func num fact(num n) {
+    if (n <= 1) {
+        end 1;
+    }
+    end n * fact(n - 1);
+}
+
+func nothing logMsg(text msg) {
+    out(msg);
+}
+
+func start() {
+    let s = square(4);
+    let f = fact(3);
+    logMsg("done");
+    out(s, f);
+}

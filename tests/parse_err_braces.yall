@@ -1,0 +1,5 @@
+func start() {
+    let a = 1;
+    let b = 2;
+    out(a + b);
+

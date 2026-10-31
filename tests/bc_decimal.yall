@@ -1,0 +1,11 @@
+func start() {
+    let a = 3.5;
+    let b = 2.0;
+    let sum = a + b;
+    let diff = a - b;
+    let prod = a * b;
+    let quot = a / b;
+    decimal widened = 10;
+    let isLess = a < b;
+    out(sum, diff, prod, quot, widened, isLess);
+}

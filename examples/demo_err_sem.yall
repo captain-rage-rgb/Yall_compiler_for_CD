@@ -1,0 +1,4 @@
+func start() {
+    num count = "one hundred";
+    out(count);
+}

@@ -1,0 +1,19 @@
+func start() {
+    if (yes) {
+        out("always");
+    }
+
+    if (no) {
+        out("never");
+    }
+
+    while (no) {
+        out("loop never");
+    }
+
+    if (5 > 10) {
+        out("math broken");
+    } other {
+        out("math ok");
+    }
+}

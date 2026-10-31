@@ -1,0 +1,5 @@
+func start() {
+    let unusedVar = 42;
+    end;
+    out("unreachable after end");
+}

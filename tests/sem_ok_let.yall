@@ -1,0 +1,12 @@
+func start() {
+    let n = 42;
+    let d = 3.14;
+    let s = "hello";
+    let fl = yes;
+    let ch = 'z';
+
+    let c = n + 2.5;
+    decimal x = 5;
+
+    out(n, d, s, fl, ch, c, x);
+}

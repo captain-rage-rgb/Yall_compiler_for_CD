@@ -1,0 +1,8 @@
+func start() {
+    let unused1 = 100 + 200;
+    let unused2 = 50;
+    out("alive");
+    end;
+    let deadAfterEnd = 999;
+    out("unreachable");
+}

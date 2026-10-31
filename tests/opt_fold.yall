@@ -1,0 +1,9 @@
+func start() {
+    let a = 2 + 3 * 4;
+    let b = (10 - 4) / 2;
+    let c = 7 % 3;
+    let d = 1.5 + 2.5 * 2.0;
+    let e = 10 > 5;
+    decimal f = 5;
+    out(a, b, c, d, e, f);
+}

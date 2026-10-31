@@ -1,0 +1,32 @@
+// valid_basic.yall - Demonstrates basic types, values, arithmetic, and comparisons
+/*
+  Multi-line comment block
+  Checking types and basic operations
+*/
+
+let num count = 10;
+let decimal pi = 3.14159;
+let text greeting = "Hello, Yall!";
+let letter initial = 'Y';
+let flag isActive = yes;
+let flag isFinished = no;
+fixed num MAX_LIMIT = 100;
+
+// Arithmetic operations
+count += 5;
+count -= 2;
+count *= 3;
+count /= 4;
+count = count % 3;
+++count;
+--count;
+
+let num total = count + 42 - 7 * 2 / 1;
+
+// Comparisons and logical operations
+let flag check = (count >= 10) && (pi < 4.0) || (!isFinished && count != 0);
+if (check == yes) {
+    count = count + 1;
+} other {
+    count = 0;
+}

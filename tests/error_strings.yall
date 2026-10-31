@@ -1,0 +1,6 @@
+// error_strings.yall - Testing string and letter literal errors
+
+let text s1 = "unterminated string literal;
+let text s2 = "bad escape: \q";
+let letter c1 = '';
+let letter c2 = 'ab';

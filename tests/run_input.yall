@@ -1,0 +1,4 @@
+func start() {
+    let name = in("Name: ");
+    out("Hello", name);
+}

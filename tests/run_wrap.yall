@@ -1,0 +1,5 @@
+func start() {
+    let max = 9223372036854775807;
+    let wrapped = max + 1;
+    out(wrapped);
+}

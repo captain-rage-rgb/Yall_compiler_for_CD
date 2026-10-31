@@ -1,0 +1,22 @@
+func flag isPrime(num n) {
+    if (n <= 1) {
+        end no;
+    }
+    let d = 2;
+    while (d * d <= n) {
+        if (n % d == 0) {
+            end no;
+        }
+        ++d;
+    }
+    end yes;
+}
+
+func start() {
+    out("Primes below 50:");
+    rep (let i = 2; i < 50; ++i) {
+        if (isPrime(i)) {
+            out(i);
+        }
+    }
+}

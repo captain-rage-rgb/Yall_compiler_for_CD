@@ -1,0 +1,20 @@
+func nothing doNothing() {
+    end;
+}
+
+func num compute(num a, num b) {
+    end a + b;
+}
+
+func num compute(num a, num b) {
+    end a * b;
+}
+
+func start() {
+    let bad = doNothing();
+    let val1 = compute(1);
+    let val2 = compute("bad", 2);
+}
+
+func start() {
+}

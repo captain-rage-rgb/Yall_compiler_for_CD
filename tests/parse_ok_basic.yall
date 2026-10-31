@@ -1,0 +1,9 @@
+let x = 2 + 3 * 4;
+num count = 10;
+decimal pi = 3.14;
+text greeting = "welcome";
+count = count + 1;
+count += 5;
+++count;
+count++;
+flag cond = (x > 10 && pi <= 4.0) || !(count == 20);

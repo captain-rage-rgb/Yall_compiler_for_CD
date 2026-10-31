@@ -1,0 +1,5 @@
+// error_comment.yall - Demonstrates an unterminated multi-line comment
+
+let num a = 10;
+/* This multi-line comment never closes
+let num b = 20;

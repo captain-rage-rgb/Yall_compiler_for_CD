@@ -1,0 +1,20 @@
+func num add(num a, num b) {
+    end a + b;
+}
+
+func num fact(num n) {
+    if (n <= 1) {
+        end 1;
+    }
+    end n * fact(n - 1);
+}
+
+func nothing doWork() {
+    out("working");
+}
+
+func start() {
+    let res = add(fact(3), 2);
+    doWork();
+    out(res);
+}

@@ -1,0 +1,12 @@
+// valid_rep.yall - Function definitions and repetition loop
+
+func num square(num n) {
+    end n * n;
+}
+
+func start() {
+    let num n = 5;
+    rep (let i = 0; i < n; ++i) {
+        out("cool");
+    }
+}

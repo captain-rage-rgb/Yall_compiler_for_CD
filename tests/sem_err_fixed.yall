@@ -1,0 +1,6 @@
+func start() {
+    fixed num a;
+    fixed num b = 10;
+    b = 20;
+    ++b;
+}

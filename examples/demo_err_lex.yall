@@ -1,0 +1,4 @@
+func start() {
+    let x = 10 @ 5;
+    out(x);
+}

@@ -1,0 +1,22 @@
+func start() {
+    let res = addThree(1, 2, 3);
+    let f = factorial(5);
+    logResult("Result: ", res + f);
+}
+
+func num factorial(num n) {
+    if (n <= 1) {
+        end 1;
+    } other {
+        end n * factorial(n - 1);
+    }
+}
+
+func num addThree(num a, num b, num c) {
+    end a + b + c;
+}
+
+func nothing logResult(text prefix, num val) {
+    out(prefix, val);
+    end;
+}

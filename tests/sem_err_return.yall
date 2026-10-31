@@ -1,0 +1,21 @@
+func nothing testNothing() {
+    end 42;
+}
+
+func num testBareEnd() {
+    end;
+}
+
+func num testWrongType() {
+    end "not a num";
+}
+
+func num testMissingReturn(num x) {
+    if (x > 0) {
+        end 1;
+    }
+}
+
+func start() {
+    out("returns test");
+}

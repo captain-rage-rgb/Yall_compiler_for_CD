@@ -1,0 +1,52 @@
+func num pow2(num k) {
+    let res = 1;
+    rep (let i = 0; i < k; ++i) {
+        res = res * 2;
+    }
+    end res;
+}
+
+func flag isSet(num mask, num k) {
+    let p = pow2(k);
+    let bit = (mask / p) % 2;
+    end bit == 1;
+}
+
+func num setBit(num mask, num k) {
+    if (!isSet(mask, k)) {
+        let p = pow2(k);
+        mask = mask + p;
+    }
+    end mask;
+}
+
+func start() {
+    out("Primes from 2 to 100 (Sieve of Eratosthenes):");
+    
+    // Yall does not have arrays, so we use a 64-bit integer bitmask.
+    // Odd numbers 3, 5, 7, ..., 99 map to bit index k = (n - 3) / 2 (indices 0 to 48).
+    let compositeMask = 0;
+
+    // Sieve odd numbers up to sqrt(100) = 10
+    rep (let p = 3; p * p <= 100; p += 2) {
+        let k = (p - 3) / 2;
+        if (!isSet(compositeMask, k)) {
+            // Mark all odd multiples p*p, p*p + 2p, ... as composite
+            rep (let m = p * p; m <= 100; m += 2 * p) {
+                let mIdx = (m - 3) / 2;
+                compositeMask = setBit(compositeMask, mIdx);
+            }
+        }
+    }
+
+    // 2 is the first prime
+    out(2);
+
+    // Print all remaining unmarked odd numbers
+    rep (let n = 3; n <= 100; n += 2) {
+        let k = (n - 3) / 2;
+        if (!isSet(compositeMask, k)) {
+            out(n);
+        }
+    }
+}

@@ -1,0 +1,17 @@
+func start() {
+    let a = 10;
+    let b = 20;
+    let sum = a + b * 2;
+    let diff = b - a;
+    let quot = b / 2;
+    let rem = b % 3;
+
+    let flag c1 = a < b && b >= 20;
+    let flag c2 = (a == 10) || !(b != 20);
+
+    a = 15;
+    a += 5;
+    ++a;
+
+    out(sum, diff, quot, rem, c1, c2, a);
+}

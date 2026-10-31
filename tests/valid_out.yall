@@ -1,0 +1,7 @@
+// valid_out.yall - Demonstrates out() invocations
+
+func start() {
+    let num x = 42;
+    out();
+    out("a", x, 3.5, yes);
+}

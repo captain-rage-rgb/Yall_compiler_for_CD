@@ -1,0 +1,5 @@
+func start() {
+    out();
+    out(42, 3.14, "hello", 'x', yes);
+    out(1 + 2 * 3, 10 / 2);
+}

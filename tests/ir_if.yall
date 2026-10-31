@@ -1,0 +1,22 @@
+func start() {
+    let x = 10;
+    if (x > 0) {
+        out("positive");
+    }
+
+    if (x == 0) {
+        out("zero");
+    } other {
+        out("nonzero");
+    }
+
+    if (x < 0) {
+        out("neg");
+    } other if (x > 100) {
+        out("big");
+    } other {
+        if (x == 10) {
+            out("ten");
+        }
+    }
+}

@@ -1,0 +1,4 @@
+func start() {
+    out("Hello, World!");
+    out("Welcome to the Yall Programming Language.");
+}

@@ -1,0 +1,5 @@
+func start() {
+    rep (let i = 0; i < 3; ++i) {
+        out(i);
+    }
+}

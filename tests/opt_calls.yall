@@ -1,0 +1,18 @@
+func num g(num x) {
+    end x + 1;
+}
+
+func num f(num a, num b) {
+    end a + b;
+}
+
+func nothing helper() {
+    out("helper called");
+}
+
+func start() {
+    let r = f(g(1), 2);
+    g(10);
+    helper();
+    out(r);
+}

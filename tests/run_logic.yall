@@ -1,0 +1,20 @@
+func flag sideEffect(text msg) {
+    out(msg);
+    end yes;
+}
+
+func start() {
+    let a = no && sideEffect("FAIL_AND");
+    out("a:", a);
+
+    let b = yes || sideEffect("FAIL_OR");
+    out("b:", b);
+
+    let c = yes && sideEffect("CALLED_AND");
+    out("c:", c);
+
+    let d = no || sideEffect("CALLED_OR");
+    out("d:", d);
+
+    out(!yes, !no);
+}

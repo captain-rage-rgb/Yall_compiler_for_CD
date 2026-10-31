@@ -1,0 +1,5 @@
+func start() {
+    out("Hello");
+    out("a", 1, 2.5, yes);
+    out();
+}

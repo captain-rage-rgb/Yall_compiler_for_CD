@@ -1,0 +1,13 @@
+out("top level statement outside function");
+
+func nothing log() {
+    end;
+}
+
+func start() {
+    let z = 10 / 0;
+    let big = 999999999999999999999999999999;
+    let bad = log();
+    num x = 5;
+    x += 2.5;
+}

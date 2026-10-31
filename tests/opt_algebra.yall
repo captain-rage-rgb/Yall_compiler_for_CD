@@ -1,0 +1,14 @@
+func num calc(num x) {
+    let a = x + 0;
+    let b = x * 1;
+    let c = x * 0;
+    let d = 0 + x;
+    let e = x - 0;
+    let f = x / 1;
+    end a + b + c + d + e + f;
+}
+
+func start() {
+    let res = calc(10);
+    out(res);
+}
