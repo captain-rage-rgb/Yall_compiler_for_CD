@@ -7,7 +7,7 @@ func start() {
         out("never");
     }
 
-    while (no) {
+    till (no) {
         out("loop never");
     }
 

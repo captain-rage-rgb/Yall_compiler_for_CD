@@ -20,7 +20,7 @@ Yall is a statically-typed, procedural programming language designed for clarity
 | `no` | `false` | Flag literal false |
 | `if` | `if` | Conditional branching |
 | `other` | `else` | Alternative branch (`other if` for `else if`) |
-| `while` | `while` | Condition-controlled loop |
+| `till` | `while` | Condition-controlled loop |
 | `rep` | `for` | Three-part repetition loop: `rep (init; cond; update) { ... }` |
 | `stop` | `break` | Terminate nearest enclosing loop |
 | `skip` | `continue` | Jump to next iteration of nearest enclosing loop |
@@ -65,7 +65,7 @@ IncDecStmt     ::= ( "++" | "--" ) IDENTIFIER ";"
 
 OutStmt        ::= "out" "(" [ Expression { "," Expression } ] ")" ";"
 IfStmt         ::= "if" "(" Expression ")" Block [ "other" ( IfStmt | Block ) ]
-WhileStmt      ::= "while" "(" Expression ")" Block
+WhileStmt      ::= "till" "(" Expression ")" Block
 RepStmt        ::= "rep" "(" [ ( VarDecl | AssignStmt ) ] ";" [ Expression ] ";" [ ( IncDecStmt | AssignStmt ) ] ")" Block
 
 StopStmt       ::= "stop" ";"

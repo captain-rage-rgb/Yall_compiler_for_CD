@@ -30,7 +30,7 @@ If any phase detects an error, the compiler stops immediately without running la
 
 ### Q3: What is panic-mode error recovery and how is it implemented?
 **Answer**:
-Panic-mode recovery is an error-recovery strategy where the parser, upon encountering an unexpected token, emits a syntax error and synchronizes by advancing tokens until it reaches a known statement boundary (a synchronizing token like `;` or a keyword like `func`, `if`, `while`, `rep`, `let`, `fixed`). This prevents cascading syntax errors while allowing the parser to find multiple syntax errors in a single pass.
+Panic-mode recovery is an error-recovery strategy where the parser, upon encountering an unexpected token, emits a syntax error and synchronizes by advancing tokens until it reaches a known statement boundary (a synchronizing token like `;` or a keyword like `func`, `if`, `till`, `rep`, `let`, `fixed`). This prevents cascading syntax errors while allowing the parser to find multiple syntax errors in a single pass.
 
 ---
 

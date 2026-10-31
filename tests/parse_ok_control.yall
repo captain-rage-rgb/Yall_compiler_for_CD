@@ -8,7 +8,7 @@ if (n > 20) {
     out("small");
 }
 
-while (n > 0) {
+till (n > 0) {
     n -= 1;
     if (n == 5) {
         skip;

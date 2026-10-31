@@ -27,7 +27,7 @@ const std::unordered_map<std::string, TokenType> Lexer::keywords_ = {
     // Control Flow
     {"if",      TokenType::KW_IF},
     {"other",   TokenType::KW_OTHER},
-    {"while",   TokenType::KW_WHILE},
+    {"till",    TokenType::KW_TILL},
     {"rep",     TokenType::KW_REP},
     {"stop",    TokenType::KW_STOP},
     {"skip",    TokenType::KW_SKIP},
@@ -58,6 +58,7 @@ const std::unordered_map<std::string, std::string> Lexer::cSuggestions_ = {
     {"true",     "yes"},
     {"false",    "no"},
     {"else",     "other"},
+    {"while",    "till"},
     {"for",      "rep"},
     {"return",   "end"},
     {"printf",   "out"},

@@ -1,4 +1,4 @@
 func start() {
-    while (yes) {
+    till (yes) {
     }
 }

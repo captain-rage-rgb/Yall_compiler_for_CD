@@ -3,7 +3,7 @@ func flag isPrime(num n) {
         end no;
     }
     let d = 2;
-    while (d * d <= n) {
+    till (d * d <= n) {
         if (n % d == 0) {
             end no;
         }

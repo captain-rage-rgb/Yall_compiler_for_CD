@@ -143,7 +143,7 @@ void Parser::synchronize() {
             case TokenType::KW_FLAG:
             case TokenType::KW_FIXED:
             case TokenType::KW_IF:
-            case TokenType::KW_WHILE:
+            case TokenType::KW_TILL:
             case TokenType::KW_REP:
             case TokenType::KW_OUT:
             case TokenType::KW_END:
@@ -265,8 +265,8 @@ std::unique_ptr<Statement> Parser::parseStatement() {
         return parseIfStmt();
     }
 
-    // whileStmt
-    if (check(TokenType::KW_WHILE)) {
+    // tillStmt
+    if (check(TokenType::KW_TILL)) {
         return parseWhileStmt();
     }
 
@@ -446,17 +446,17 @@ std::unique_ptr<IfStmt> Parser::parseIfStmt() {
 }
 
 std::unique_ptr<WhileStmt> Parser::parseWhileStmt() {
-    Token whileTok = advance(); // consume 'while'
+    Token whileTok = advance(); // consume 'till'
 
     // Avoid cascading error if opening '(' was omitted
     if (!check(TokenType::LEFT_PAREN)) {
-        addError(peek(), "expected '(' after 'while', found '" + tokenDescription(peek()) + "'");
+        addError(peek(), "expected '(' after 'till', found '" + tokenDescription(peek()) + "'");
     } else {
         advance(); // consume '('
     }
 
     auto cond = parseExpression();
-    consume(TokenType::RIGHT_PAREN, "expected ')' after 'while' condition");
+    consume(TokenType::RIGHT_PAREN, "expected ')' after 'till' condition");
     auto body = parseBlock();
     return std::make_unique<WhileStmt>(std::move(cond), std::move(body), whileTok.line, whileTok.column);
 }

@@ -31,7 +31,7 @@ enum class TokenType {
     // === Keywords: Control Flow ===
     KW_IF,          // 'if'
     KW_OTHER,       // 'other'
-    KW_WHILE,       // 'while'
+    KW_TILL,        // 'till'
     KW_REP,         // 'rep'
     KW_STOP,        // 'stop'
     KW_SKIP,        // 'skip'
@@ -135,7 +135,7 @@ inline std::string tokenTypeToString(TokenType type) {
         // Keywords: Control Flow
         case TokenType::KW_IF:          return "KW_IF";
         case TokenType::KW_OTHER:       return "KW_OTHER";
-        case TokenType::KW_WHILE:       return "KW_WHILE";
+        case TokenType::KW_TILL:        return "KW_TILL";
         case TokenType::KW_REP:         return "KW_REP";
         case TokenType::KW_STOP:        return "KW_STOP";
         case TokenType::KW_SKIP:        return "KW_SKIP";

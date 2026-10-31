@@ -1,6 +1,6 @@
 func start() {
     let count = 0;
-    while (count < 3) {
+    till (count < 3) {
         ++count;
         if (count == 2) {
             skip;
